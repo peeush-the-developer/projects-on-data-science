@@ -9,6 +9,12 @@ We need this to collect unstructured data present over internet and store the sa
 
 ### BeautifulSoup
 
+```shell
+# Install the library using PIP command
+$ pip install bs4
+```
+
+
 ```python
 # Import library using following line
 from bs4 import BeautifulSoup
