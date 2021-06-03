@@ -13,8 +13,19 @@ $ python src/create_folds.py
 ### Run train script to train the model
 
 ```
-$ sh src/run.sh
+$ sh src/run.sh {MODEL_NAME} {COLS}
 ```
+
+`{MODEL_NAME}` can be replaced as one of the following:
++ `lr`: Linear regression model
++ `dt`: Decision tree model
++ `rf`: Random forest model
++ `lasso`: Lasso model
+
+`{COLS}` can be replaced as one of the following:
++ `DUR`: Duration column only,
++ `ALN`: All numerical columns i.e. ['Age','Height','Weight','Duration','Heart_Rate','Body_Temp']
++ `ALL`: All columns i.e. ['Gender','Age','Height','Weight','Duration','Heart_Rate','Body_Temp']
 
 ## Description
 
