@@ -14,7 +14,6 @@ We need this to collect unstructured data present over internet and store the sa
 $ pip install bs4
 ```
 
-
 ```python
 # Import library using following line
 from bs4 import BeautifulSoup
@@ -36,3 +35,17 @@ Steps that we followed to extract the information in tabular structure:
 - Extract required information for all similar elements those contain required information
 - Populate the `pandas` DataFrame with the information
 - Process Data cleaning steps if required.
+
+### 2. Extract Trump's lies from the article
+
+Steps that we followed to extract the information in our pandas dataframe:
+
+- Open this [article link](https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html) in any browser
+- Check the HTML structure of items that we want to extract.  
+  _Note: Use browser's Developer tools (Press F-12 key to activate)_
+  ![Browser Developer tools snapshot](02-Trump-Lies-Data/Browser_DevTools_Snapshot.png)
+- Import `BeautifulSoup` library in your python project
+- Create a Soup object for the web page above
+- Extract required information for all lies
+- Populate the pandas dataframe with the information
+- Process Data cleaning if necessary.
