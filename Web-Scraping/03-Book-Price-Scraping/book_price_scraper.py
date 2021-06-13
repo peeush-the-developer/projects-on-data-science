@@ -51,7 +51,12 @@ if __name__ == "__main__":
     # Read from Command line arguments
     ap = argparse.ArgumentParser()
     ap.add_argument(
-        "-p", "--pages", type=int, choices=range(1, 51), help="Total pages to scrape"
+        "-p",
+        "--pages",
+        type=int,
+        required=True,
+        choices=range(1, 51),
+        help="Total pages to scrape",
     )
     args = vars(ap.parse_args())
 
