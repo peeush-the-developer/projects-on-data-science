@@ -7,3 +7,6 @@
 
 # Don't ignore Out_Sample_01.jpg
 !/Computer-Vision/01-Pencil-Sketch-From-Image/Data/Output/Out_Sample_01.jpg
+
+# Web-Scraping
+Web-Scraping/03-Book-Price-Scraping/book_prices.csv
